@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>New Product</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Add New Product</h2>
+  <form (submit)="formOperation($event)" >
+    <div class="mb-3 mt-3">
+      <label for="text">Product Name:</label>
+      <input
+       type="text" class="form-control" id="email" placeholder="Enter New Product Name"
+        name="productName"  [(ngModel)]="productName" >
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Price:</label>
+      <input type="number" 
+       class="form-control" id="pwd" placeholder="Enter New Price" name="price" [(ngModel)]="price"> 
+    </div>
+    <div class="mb-3">
+      <label for="pwd">ID:</label>
+      <input type="number" 
+      class="form-control" id="pwd" placeholder="Enter New id" name="id" [(ngModel)]="id">
+    </div>
+    <div class="mb-3">
+        <label for="pwd">quantity:</label>
+        <input type="number"
+         class="form-control"  id="pwd" placeholder="Enter New quantity" name="quantity" [(ngModel)]="quantity" >
+      </div>
+      <div class="mb-3">
+        <label for="pwd">Description:</label>
+        <input type="text" 
+        class="form-control" id="pwd" 
+        placeholder="Enter New Description" name="Description"  [(ngModel)]="Description" >
+      </div>
+      <div class="mb-3">
+        <label for="pwd">Images:</label>
+        <input type="file" 
+         class="form-control" id="pwd" placeholder="Enter New image" name="images" [(ngModel)]="images">
+      </div>
+    
+      <button type="submit" class="btn btn-dark">
+        {{ productId == 0 ? "Add New Product" : "Edit Product" }}
+      </button>
+  </form>
+</div>
+<br>
+<br>
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+
+</body>
+</html>
+

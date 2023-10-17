@@ -1,0 +1,28 @@
+
+<div class="row row-cols-1 row-cols-md-4 bg-dark justify-content-center " >
+    
+    <div class="col">
+      <div class="card  bg-dark">
+        <img src={{products.images}} class="card-img-top" style="height: 360px;" alt="...">
+        <div class="card-body bg-dark text-white">
+          <h5 class="card-title ">productNAME : {{products.productName}}</h5>
+          <h6 class="card-title ">productPRICE : {{products.price}}</h6>
+          <h6 class="card-title "> productQuantity : {{products.quantity}}</h6>
+
+
+          <p class="card-text">{{products.Description}}</p>
+          <div>
+            <i class="text-warning bi bi-star-fill"></i>
+            <i class="text-warning bi bi-star-fill"></i>
+            <i class="text-warning bi bi-star-fill"></i>
+            <i class="text-warning bi bi-star-fill"></i>
+            <i class="text-warning bi bi-star-fill"></i>
+          </div>
+          <br>
+          <button [routerLink]="['/products']" class="btn btn-outline-light">
+            Back to Products
+          </button>
+        </div>
+      </div>
+    </div>
+</div>
